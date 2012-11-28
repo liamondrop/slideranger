@@ -1,0 +1,94 @@
+.container {
+    width: 300px;
+    margin: 50px auto 0;
+    padding: 25px;
+    border: 1px solid #CCC;
+}
+#status {
+    height: 18px;
+    margin-top: 45px;
+    line-height: 18px;
+    font-family: helvetica, arial, verdana;
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+}
+.slideranger-node { position: relative }
+.slideranger-node .slideranger-bar,
+.slideranger-node .slideranger-range {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    background: #EEE;
+    box-shadow: inset 0 0 5px #CCC;
+    height: 5px;
+}
+.slideranger-step {
+    display: inline-block;
+    background: #000;
+}
+.slideranger-node .slideranger-range {
+    background-color: #2379b7;
+    box-shadow: inset 0 0 5px #777;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+.slideranger-node .slideranger-range:hover {
+    background-color: #44a5ea;
+}
+.slideranger-node .slideranger-tabs {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.slideranger-node .slideranger-tab {
+    display: inline-block;
+    text-align: center;
+    font-family: verdana;
+    font-size: 9px;
+    color: #666;
+}
+.slideranger-node .slideranger-tab .slideranger-notch,
+.slideranger-node .slideranger-tab .slideranger-label {
+    display: none;
+}
+.slideranger-node .slideranger-tab.notch-show .slideranger-notch {
+    display: block;
+    width: 1px;
+    height: 3px;
+    background: #EEE;
+    box-shadow: inset 0 0 5px #CCC;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.slideranger-node .slideranger-tab.active .slideranger-notch {
+    background: #f00;
+    box-shadow: inset 0 0 5px #2379b7;
+}
+.slideranger-node .slideranger-tab.active .slideranger-label {
+    color: #2379b7;
+}
+.slideranger-node .slideranger-tab:hover .slideranger-label {
+    color: #44a5ea;
+}
+.slideranger-node .slideranger-tab.label-show .slideranger-label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 0 0;
+}
+.slideranger-node .slideranger-handles {
+    position: absolute;
+    top: -5px;
+    left: 0;
+}
+.slideranger-node .slideranger-handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 18px;
+    background: url(../images/slider-tab.png);
+}
